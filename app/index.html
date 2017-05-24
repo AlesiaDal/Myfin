@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Модальное окно</title>
+  <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+  <link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+ <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+  
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+  <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+
+
+<div class="wrapper"><a class="modalbox" href="#inline"> Открыть модальное окно</a></div>
+<!-- hidden inline form -->
+<div id="inline">
+
+
+	<form class="first" id="contact" name="contact" action="#" method="post">
+	<div class="form-group buttons">
+	<label for="#">Комнат </label>
+<input class="active one" type="text" name="transport" value="1" /> 
+<input class="active two" type="text" name="transport" value="2" />
+<input type="text" name="transport" value="3" />  
+<input type="text" name="transport" value="4+" />
+	</div>	
+	<div class="form-group price">		
+<label for="#">Цена  </label>
+<input type="text" name="transport" value="0" />  
+-  
+<input type="text" name="transport" value="100" />
+<label for="#"> $</label>
+</div>
+<div class="form-group direction">
+<label for="#">Направление </label>
+<select name="menu" size="1">
+<option value="first">North </option>
+<option selected="selected" value="second"> South</option>
+<option value="third">East</option>
+<option value="fourth">West</option>
+</select>
+</div>
+		<br>
+	</form>
+	
+	<form class="search" id="contact" name="contact" action="#" method="post">
+		<div class="form-group street">
+<label >Расширенный поиск </label><br>
+<input  type="text"  value="Улица" /> 
+</div>
+<div class="form-group street_2">
+<label >Удаленность от МКАД, км </label><br>
+<input  type="text" id="minCost" value="0" />
+- 
+<input  type="text" id="maxCost" value="1000" />
+<div id="slider-range"></div>
+</div>
+
+<div class="form-group street_3">
+<label for="amount">Площадь, м <sup>2</sup></label> <br>
+<input  type="text" id="amount" value="0" />
+- 
+<input  type="text" id="amount_2" value="8" />
+<div id="slider"></div>
+</div>
+</form>
+<form class="check" id="contact" name="contact" action="#" method="post" > 
+<div class="checkbox">
+	<label for="r1"> <span></span>Предложения от </label> <br>
+		<input type="radio" name="#" value="Сoбственник" checked="checked" id="r1"  class="radio"/>  <small> Собственника</small><br />
+		<input type="radio" name="#" value="Агенство" id="r1" class="radio"/> <small>Агенство</small><br />
+	</div>
+<div class="checkbox">
+	<label for="c1">Предложения </label> <br>
+		<input type="checkbox" name="#" value="C фото" checked="checked" id="c1" />  <small> С фото</small><br />
+	</div>
+	</form>
+	<div class="btn">
+<a href="#"> <span><i class="fa fa-search"></i></span> Найти</a>
+</div>
+</div>
+
+<!-- basic fancybox setup -->
+
+
+	
+
+
+
+
+
+
+</body>
+</html>
